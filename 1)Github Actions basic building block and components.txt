@@ -1,0 +1,38 @@
+# GitHub Actions Basic Building Blocks and Components:
+------------------------------------------------------
+    => Workflow: A workflow is an automated process defined in a YAML file located in the .github/workflows directory of a repository. It consists of one or more jobs that run based on specific events (triggers).    
+    => Job: A job is a set of steps that execute on the same runner. Jobs can run sequentially or in parallel, and each job runs in its own virtual environment.    
+    => Step: A step is an individual task that can run commands or actions. Steps are executed in the order they are defined within a job.    
+    => Action: An action is a reusable unit of code that can be used in workflows. Actions can be created by the community or by users themselves and can be combined to create complex workflows.    
+    => Runner: A runner is a server that runs the jobs defined in a workflow. GitHub provides hosted runners, but users can also set up self-hosted runners.    
+    => Event: An event is a specific activity that triggers a workflow to run. Common events include pushes to a repository, pull requests, and scheduled times.    
+    => Artifact: An artifact is a file or set of files generated during a workflow run that can be stored and accessed later. Artifacts are often used to share build outputs or test results.    
+    => Secret: A secret is a sensitive piece of information, such as an API key or password, that is stored securely in GitHub and can be used in workflows without exposing the actual value.    
+    => Matrix: A matrix allows you to run a job multiple times with different configurations, such as different operating systems or versions of a programming language. This is useful for testing across various environments.    
+    => Workflow File: A YAML file that defines the workflow, including triggers, jobs, and steps. It is stored in the .github/workflows directory of a repository.    
+    => Contexts: Contexts provide information about the workflow run, such as the event that triggered the run, the repository, and the actor. Contexts can be used to customize the behavior of workflows. 
+    => Expressions: Expressions are used to evaluate conditions and manipulate data within workflows. They can be used in various places, such as in if statements and to set environment variables.
+    => Environment: An environment is a set of rules and protections that can be applied to jobs in a workflow. Environments can include secrets, deployment rules, and approval processes.    
+    => Cache: Caching is a mechanism to store dependencies or build outputs to speed up subsequent workflow runs. GitHub Actions provides built-in support for caching.    
+    => Notifications: Notifications can be configured to alert users about the status of workflow runs, such as successes or failures. Notifications can be sent via email, Slack, or other channels.    
+    => Marketplace: The GitHub Actions Marketplace is a platform where users can discover and share actions created by the community. It provides a wide range of pre-built actions for various use cases.    
+    => Billing: GitHub Actions usage is subject to billing based on the number of minutes used and the storage of artifacts and logs. Different plans have different limits and pricing structures.    
+------------------------------------------------------
+
+    => List of Common Triggers for GitHub Actions Workflows:
+        1. push: Triggered when code is pushed to a branch or tag.
+        2. pull_request: Triggered when a pull request is opened, synchronized, or closed.
+        3. schedule: Triggered at specified times using cron syntax.
+        4. workflow_dispatch: Triggered manually via the GitHub UI.
+        5. release: Triggered when a release is published, edited, or deleted.
+        6. issue_comment: Triggered when a comment is created on an issue or pull request.
+        7. fork: Triggered when a repository is forked.
+        8. star: Triggered when a repository is starred or unstarred.
+        9. watch: Triggered when a user stars a repository.
+        10. create: Triggered when a branch or tag is created.
+        11. delete: Triggered when a branch or tag is deleted.
+        12. deployment: Triggered when a deployment is created.
+        13. deployment_status: Triggered when the status of a deployment changes.
+        14. pull_request_review: Triggered when a review is submitted on a pull request.
+        15. pull_request_review_comment: Triggered when a comment is created on a pull request review.
+    ------------------------------------------------------
